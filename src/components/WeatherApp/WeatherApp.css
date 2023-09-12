@@ -1,0 +1,146 @@
+:root {
+    --container-height: 130px;
+}
+
+.container{
+    position: relative;
+    width: 607px;
+    height: var(--container-height);
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input {
+    display: flex;
+    width: 362px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 40px;
+    color: #06283D;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+.search-box input:hover {
+    background-color: #f0f0f0;
+}
+
+.search-box input:focus {
+    background-color: #f0f0f0;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    cursor: pointer;
+}
+
+.search-icon img:hover {
+    background-color: #e086e8;
+    padding: 15px;
+    border-radius: 100%;
+    transition: 0.2s ease;
+}
+
+.location-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.weather-image {
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-temp {
+    display: flex;
+    justify-content: center;
+    color: #06283D;
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.weather-location {
+    display: flex;
+    justify-content: center;
+    color: #06283D;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.data-container {
+    margin-top: 50px;
+    color: #06283D;
+    display: flex;
+    justify-content: center;
+}
+
+.element {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.data {
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon {
+    margin-top: 12px;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
